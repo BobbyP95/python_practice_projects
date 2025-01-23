@@ -14,6 +14,25 @@ def find_last_char():
     print("The last char of "+word +" is " + word[last_char_index])
 
 
-find_last_char()
 
+# Break 2 digit number and add it
+def break_2_digit():
+    two_digit = input("Enter the two digit number\n: ")
+    if len(two_digit) > 2:
+        print("please enter only 2 digits")
+        return
+    if len(two_digit) < 2:
+        print("please enter up to 2 digits")
+        return  
+    number1 = int(two_digit[0])
+    number2 = int(two_digit[1])
+    print(number1 + number2)
+    return
+# Body Mass Index 
+def bmi_Calculator():
+    height = input("Please enter the height in meters\n: ")
+    weight = input("Please enter the weight in kg\n: ")
+    result = float(weight) / (float(height)**2)
+    print("Your BMI is : "+ str(result))
 
+bmi_Calculator()
